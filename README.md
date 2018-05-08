@@ -15,6 +15,11 @@ guias, tutoriais e etcs
 | browser | cordova platform add browser  |
 | osx | cordova platform add osx |
 
+- Gerando app via build:  ```cordova build <nome da plataforma>``` 
+
+- Testando aplicativo: ```cordova run android``` obs: tesntando dessa forma vc precisa ativar a ```opção de desenvolvedor``` do android e também conectar o celular ao computador com o cabo ```USB``` 
+
+
 #
 
 ### (PARA-ANDROID-IOS)  Utilizando plugins no cordova.
