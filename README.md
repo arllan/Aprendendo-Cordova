@@ -1,6 +1,22 @@
 # Aprendendo-Cordova
 guias, tutoriais e etcs
 #
+### Comando do cordova.
+- Criar estrutura do aplicativo: ``` Cordova create <nome do projeto>```
+- Adicionando plugin ao aplicativo: ``` cordova plugin add <nome do plugin> ``` obs: Lembre de configurar o plugin no arquivo index.js
+- Listando plugins do aplicativo: ```cordova plugin ls```
+- Removendo plugins do aplicaativo: ```cordova plugin rm nome-do-plugin```
+- Adicionado plataforma: ```cordova platform add android```
+
+| Plataforma | Comando |
+| ------ | ------ |
+| android | cordova platform add android|
+| ios | cordova platform add ios|
+| browser | cordova platform add browser  |
+| osx | cordova platform add osx |
+
+#
+
 ### (PARA-ANDROID-IOS)  Utilizando plugins no cordova.
 No cordova podemos adicionar plugins para torna o desenvolvimento mais rápido. Hoje vamos aprender a como adiciona, lista e remover plugins.
 
