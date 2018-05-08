@@ -1,13 +1,31 @@
 # Aprendendo-Cordova
 guias, tutoriais e etcs
 #
+### (PARA-ANDROID-IOS)  Utilizando plugins no cordova.
+No cordova podemos adicionar plugins para torna o desenvolvimento mais rápido. Hoje vamos aprender a como adiciona, lista e remover plugins.
+
+Podemos encontrar os plugins do cordova no site: https://cordova.apache.org/plugins/ 
+
+1-	Abra o terminal, e vá até a pasta do projeto.
+
+2-	Para adicionar um plugin no projeto e só utilizar o comando ```cordova plugin add nome-do-plugin```. 
+
+3-	Com o plugin baixado, agora vamos configurar a extensão no arquivo ```js/index.js```. Cada plugin tem um manual na pagina de como configurar, agora e só seguir o manual de cada um. 
+
+4-	 Para listar os plugins de uma aplicação utilizamos o comando ```cordova plugin ls```
+
+5-	Para remover um plugin de uma aplicação utilizamos o comando ```cordova plugin rm nome-do-plugin```
+
+
+
+#
 #### (PARA-ANDROID) Adicionando icone a aplicação cordova.
 
 1- Procure o arquivo config.xml na pasta da aplicação e abra.
 
 2- no final do arquivo antes da teg ``` '</widget>'``` adicione o trecho de código.
 
-```sh
+```
   
 <platform name="android"> <!--apenas para aplicação android--> 
         <!--
