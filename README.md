@@ -1,7 +1,7 @@
 # Aprendendo-Cordova
-guias, tutoriais e etcs
+Guias, tutoriais e etcs
 #
-### Comando do cordova.
+### Comandos do cordova.
 - Criar estrutura do aplicativo: ``` Cordova create <nome do projeto>```
 - Adicionando plugin ao aplicativo: ``` cordova plugin add <nome do plugin> ``` obs: Lembre de configurar o plugin no arquivo index.js
 - Listando plugins do aplicativo: ```cordova plugin ls```
@@ -19,6 +19,43 @@ guias, tutoriais e etcs
 
 - Testando aplicativo: ```cordova run android``` obs: tesntando dessa forma vc precisa ativar a ```opção de desenvolvedor``` do android e também conectar o celular ao computador com o cabo ```USB``` 
 
+
+#
+### Conhecendo a estrutura do arquivo config.xml
+```
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="io.cordova.hellocordova" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0"> <!--id da aplicação + versão do aplicativo-->
+    <name>HelloCordova</name> <!--nome do aplicativo-->
+    <description>
+        A sample Apache Cordova application that responds to the deviceready event. <!--descrição do aplicativo-->
+    </description>
+    <author email="dev@cordova.apache.org" href="http://cordova.io"> <!--email do autor e site-->
+        Apache Cordova Team <!--nome do autor-->
+    </author>
+    <content src="index.html" /> <!--informa a primeira pagina que o app vai iniciar-->
+    <plugin name="cordova-plugin-whitelist" spec="1" />
+    <access origin="*" /> <!--controla o acesso externo de dominios, deful dele e para todos.-->
+    <allow-intent href="http://*/*" /><!--informa os protocolos liberados-->
+    <allow-intent href="https://*/*" /><!--informa os protocolos liberados-->
+    <allow-intent href="tel:*" /><!--informa os protocolos liberados-->
+    <allow-intent href="sms:*" /><!--informa os protocolos liberados-->
+    <allow-intent href="mailto:*" /><!--informa os protocolos liberados-->
+    <allow-intent href="geo:*" /><!--informa os protocolos liberados-->
+    <platform name="android"><!--local que limita qual plataforma vai ter x configuração-->
+        <allow-intent href="market:*" /> <!--apenas a plataforma android vai ter essa x configração-->
+    </platform>
+    <platform name="ios"> <!--local que limita qual plataforma vai ter x configuração-->
+        <allow-intent href="itms:*" /> <!--apenas a plataforma android vai ter essa x configração-->
+        <allow-intent href="itms-apps:*" /><!--apenas a plataforma android vai ter essa x configração-->
+    </platform>
+    <preference name="fullscreen" value="true"/> <!--faz com que ocupe toda a tela >>>>(opcional)-->
+    <preference name="orientation" value="landscape"/> <!--faz com que fique em modo fotografia >>(opcional)-->
+
+    <!--referencia: https://cordova.apache.org/docs/en/latest/config_ref/index.html-->
+</widget>
+
+
+```
 
 #
 
