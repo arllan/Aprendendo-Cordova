@@ -74,6 +74,14 @@ Podemos encontrar os plugins do cordova no site: https://cordova.apache.org/plug
 
 5-	Para remover um plugin de uma aplicação utilizamos o comando ```cordova plugin rm nome-do-plugin```
 
+#
+### Utilizando cordova plugin crosswalk webview
+
+1- Com o projeto criado e adicionado a plataforma adicione o plugin ``` 'cordova plugin add cordova-plugin-crosswalk-webview'```
+
+2- Apos adicionar o plugin instale o plugin ``` 'cordova plugin add cordova-android-support-gradle-release'```
+
+3 -  Gere a aplicação com o comando  ``` 'cordova build android'```
 
 
 #
