@@ -144,7 +144,7 @@ Podemos encontrar os plugins do cordova no site: https://cordova.apache.org/plug
  
  4- ADICIONE O PLUGIN DO CORDOVA AO PROJETO "cordova plugin add cordova-plugin-crosswalk-webview"
  
- 5- AGORA E SÓ GERAR ELE COM O COMANDO "CORDOVA BUILD ANDROID"
+ 5- AGORA E SÓ GERAR ELE COM O COMANDO "CORDOVA BUILD ANDROID" / PPara versão 64bits o comando e "cordova build android --xwalk64bit" / cordova build --release --xwalk64bit
  
  6-  O APLICATIVO SERA GERADO EM DOIS APKS
  
